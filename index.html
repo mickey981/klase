@@ -7,6 +7,32 @@
     <title>Document</title>
 </head>
 <body>
+    <script>
     
-</body>
+    class Automobili {
+            constructor(marka, model){
+                this.marka = marka;
+                this.model = model;
+            }
+
+            vratiAuto(){
+                console.log("Proizvodjac: "+ this.marka + ", model "+ this.model + ".");
+            }
+
+        }    
+    class Sportski extends Automobili{
+        constructor(zapremina, KS) {
+            super();
+            this.zapremina = zapremina;
+            this.KS = KS;
+        }
+        vratiMotor() {
+            console.log("Zapremina motora je: "+this.zapremina+" a broj konja je: "+this.KS);
+        }
+    }
+      const sportski1 = new Sportski("3000", "400");
+      sportski1.vratiMotor(); 
+    </script>
+
+ </body>
 </html>
